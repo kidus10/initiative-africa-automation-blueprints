@@ -1,0 +1,57 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "314307ee-4394-4248-bedf-4c768d4a1f57",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "value": "Kidus is a genius"
+      },
+      "type": "n8n-nodes-base.crypto",
+      "typeVersion": 2,
+      "position": [
+        176,
+        48
+      ],
+      "id": "0495e9f9-25b9-4855-8ab2-15a5d430ab97",
+      "name": "Crypto",
+      "executeOnce": false
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Crypto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "f99215a2-ae8b-472b-b3bc-1f63f134dab1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6f17bec2c033d8abe3bd6afa197f9741675d5e0c754a0b78900cc2522bcd297a"
+  },
+  "nodeGroups": [],
+  "id": "aOayO988eLRSKxi6",
+  "tags": []
+}
